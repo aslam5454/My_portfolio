@@ -48,6 +48,34 @@ export const PROJECTS = [
     techStack: ["JavaScript", "React", "PHP", "MySQL", "Gemini API"],
     github: "https://github.com/aslam5454",
     image: "/gemini.png"
+  },
+  {
+    title: "Weather Dashboard",
+    duration: "Feb 2025 – Mar 2025",
+    description: "A clean, responsive weather application fetching real-time forecasting data via the OpenWeather API with an intuitive, dynamic user interface.",
+    features: [
+      "Real-time weather data fetching",
+      "5-day forecast visualization",
+      "Location-based auto-detection",
+      "Dynamic styling based on weather"
+    ],
+    techStack: ["React", "JavaScript", "Tailwind CSS", "REST API"],
+    github: "https://github.com/aslam5454",
+    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+  },
+  {
+    title: "Hotel Booking UI",
+    duration: "Jan 2025 – Feb 2025",
+    description: "A breathtaking, modern hotel booking interface featuring dynamic date selection, responsive room galleries, and seamless transitions.",
+    features: [
+      "Interactive property gallery",
+      "Complex date selection logic",
+      "Fluid layout animations",
+      "Responsive mobile-first design"
+    ],
+    techStack: ["React", "Framer Motion", "Tailwind CSS"],
+    github: "https://github.com/aslam5454",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
   }
 ];
 
@@ -64,10 +92,22 @@ export const TRAINING = {
 };
 
 export const CERTIFICATIONS = [
-  "ChatGPT, Generative AI & LLM – Infosys (Aug 2025)",
-  "Cloud Computing – NPTEL (Apr 2025)",
-  "The Bits and Bytes of Computer Networking – Coursera (Sep 2024)",
-  "Responsive Web Design – freeCodeCamp (Nov 2023)"
+  {
+    title: "ChatGPT, Generative AI & LLM – Infosys (Aug 2025)",
+    link: "https://drive.google.com/file/d/1j_tnZRnVB3RtrjGmdlTN5bqtfRYE44zR/view"
+  },
+  {
+    title: "Cloud Computing – NPTEL (Apr 2025)",
+    link: "https://drive.google.com/file/d/1p5UFdQyJwfNaWf2tcj-8Xrcyw5l_Lyfl/view"
+  },
+  {
+    title: "The Bits and Bytes of Computer Networking – Google (Sep 2024)",
+    link: "https://drive.google.com/file/d/1lTMu144uYMdkmLHAXVG9fx46qFn2NtMQ/view"
+  },
+  {
+    title: "Responsive Web Design – freeCodeCamp (Nov 2023)",
+    link: "https://drive.google.com/file/d/1MYQhWsHGqgsc-FvbfLmIalZBmbvaE0AE/view"
+  }
 ];
 
 export const EDUCATION = [

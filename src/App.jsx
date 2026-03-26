@@ -18,16 +18,21 @@ function App() {
   });
 
   return (
-    <div className="bg-dark-bg min-h-screen text-gray-200 font-sans relative">
+    <div className="bg-dark-bg min-h-screen text-gray-200 font-sans relative overflow-x-hidden">
+      
       {/* Scroll Progress Bar */}
       <motion.div 
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-neon-blue to-neon-purple origin-left z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-neon-blue to-neon-purple origin-left z-50 pointer-events-none"
         style={{ scaleX }}
       />
       
-      <Navbar />
+      {/* Navbar Overlay */}
+      <div className="relative z-50">
+        <Navbar />
+      </div>
       
-      <main className="flex flex-col items-center w-full">
+      {/* Main HTML Content Overlay */}
+      <main className="flex flex-col items-center w-full relative z-10">
         <Hero />
         <About />
         <Skills />
@@ -38,7 +43,7 @@ function App() {
         <Contact />
       </main>
 
-      <footer className="w-full py-6 text-center text-sm text-gray-500 border-t border-white/10 mt-12 bg-dark-bg/80 backdrop-blur-md">
+      <footer className="w-full py-6 text-center text-sm text-gray-500 border-t border-white/10 mt-12 bg-dark-bg/80 backdrop-blur-md relative z-10">
         <p>© {new Date().getFullYear()} Aslam Husain. All rights reserved.</p>
       </footer>
     </div>

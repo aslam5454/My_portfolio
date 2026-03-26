@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../data';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import myPhoto from '../assets/my_photo.jpeg';
+import aslamCV from '../assets/Aslam_cv.pdf';
 
 export default function Hero() {
   const container = {
@@ -60,7 +62,7 @@ export default function Hero() {
             <a href="#contact" className="px-6 py-3 bg-neon-purple/20 border border-neon-purple text-white hover:bg-neon-purple hover:text-white font-bold rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
               Contact Me
             </a>
-            <a href="#" className="px-6 py-3 bg-gray-800 border border-gray-600 text-gray-300 hover:bg-gray-700 font-bold rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+            <a href={aslamCV} download="Aslam_Husain_CV.pdf" className="px-6 py-3 bg-gray-800 border border-gray-600 text-gray-300 hover:bg-gray-700 font-bold rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
               Download CV
             </a>
           </motion.div>
@@ -83,24 +85,24 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 0.8, type: 'spring', bounce: 0.4, delay: 0.2 }}
-          className="relative w-full max-w-md mx-auto xl:max-w-lg mt-12 md:mt-0"
+          className="relative mx-auto mt-12 md:mt-0 w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96"
         >
           {/* Decorative Background Frame */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-neon-blue to-neon-purple rounded-2xl transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 -z-10 opacity-70"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-neon-blue to-neon-purple rounded-full transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 -z-10 opacity-70"></div>
           
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="relative rounded-2xl overflow-hidden glass aspect-square sm:aspect-[4/5] md:aspect-square flex items-center justify-center border-2 border-white/10"
+            className="relative rounded-full overflow-hidden glass w-full h-full flex items-center justify-center border-4 border-white/10 shadow-2xl"
           >
             {/* The Image */}
             <img 
-              src="/avatar.png" 
+              src={myPhoto} 
               alt="Aslam Husain Photo" 
               className="object-cover w-full h-full filter saturate-150 contrast-125"
             />
             
             {/* Floating glowing overlay for polish */}
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/60 via-transparent to-transparent pointer-events-none rounded-full"></div>
           </motion.div>
 
           {/* Floating Accents */}
